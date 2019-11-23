@@ -3,7 +3,8 @@
     "registration":"Registration",
     "tasks":"Tasks",
     "login":"Login",
-    "logout": "Logout"
+    "logout": "Logout",
+    "msg": "First register, then login, then add task"
     },
     "reg":{
         "Email":"Email",
