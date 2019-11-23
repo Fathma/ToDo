@@ -1,0 +1,14 @@
+<div class="right" *ngIf="tasks">
+
+    <h3>Tasks</h3>
+    <ul>
+      <div *ngFor="let task of tasks | async; let i = index">
+      <li  *ngIf="task.userId == _id">
+          {{ task.userId }} {{ task.title }}:{{task.description}}<a (click)="delTask(i)" >x</a>
+      </li>
+      </div>
+    </ul>
+  
+  </div>
+ 
+  
