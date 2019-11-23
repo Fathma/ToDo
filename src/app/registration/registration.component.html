@@ -3,8 +3,8 @@
 <div class="content" role="main" style="padding-top: 50px; padding-left: 600px;">
     <p>{{'home.msg' | translate}}</p>
     <form #login = "ngForm"  (ngSubmit) = "onClickSubmit(login.value)" > 
-        <input type = "text" name = "email" placeholder = "{{'reg.Email' | translate}}" ngModel> <br/>
-        <input type = "password" name = "pwd" placeholder = "{{'reg.Password' | translate}}" ngModel> <br/> 
+        <input type = "email" name = "email" placeholder = "{{'reg.Email' | translate}}" ngModel> <br/>
+        <input type = "password" name = "pwd" minlength="3" placeholder = "{{'reg.Password' | translate}}" ngModel> <br/> 
         <input type = "submit" value = "{{'reg.Submit' | translate}}"> 
     </form>
   
