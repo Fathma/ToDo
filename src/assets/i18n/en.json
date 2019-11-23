@@ -4,7 +4,7 @@
     "tasks":"Tasks",
     "login":"Login",
     "logout": "Logout",
-    "msg": "First register, then login, then add task"
+    "msg": "First register, then login, then add task.As i am saving user data in a local file, reload will erase data."
     },
     "reg":{
         "Email":"Email",
