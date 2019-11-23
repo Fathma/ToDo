@@ -1,5 +1,25 @@
 {
     "home":{
-    "greeting": "hello"
+    "registration":"Registration",
+    "tasks":"Tasks",
+    "login":"Login",
+    "logout": "Logout"
+    },
+    "reg":{
+        "Email":"Email",
+        "Password":"Password",
+        "Submit":"Submit"
+        
+    },
+    "create":{
+        "title":"Title",
+        "description": "Description",
+        "setectOne": "Setect One",
+        "addTask": "Add a Task",
+        "pending":"pending",
+        "onGoing": "On Going",
+        "complete": "complete"
+        
+
     }
 }

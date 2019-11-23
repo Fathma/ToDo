@@ -1,14 +1,22 @@
-<div class="left" *ngIf="error">
 
-    <input type="text" placeholder="title" #title>
-    <input type="text" placeholder="description" #description>
-    <select #pending>
-      <option value="">Sletect One</option>
-      <option value="Pending">pending</option>
-      <option value="On Going">On Going</option>
-      <option value="Complete">Complete</option>
-    </select> 
+
+<div class="content"  style="padding-top: 50px; padding-left: 600px;">
+
   
-    <button (click)="addTask(title.value,description.value, pending.value )">Add a Task</button>
-    <app-read></app-read>
+    
+      <input type="text" placeholder="{{'create.title' | translate}}" #title><br>
+      <input type="text" placeholder="{{'create.description' | translate}}" #description><br>
+      <select #pending>
+        <option value="">{{'create.setectOne' | translate}}</option>
+        <option value="Pending">{{'create.pending' | translate}}</option>
+        <option value="On Going">{{'create.onGoing' | translate}}</option>
+        <option value="Complete">{{'create.complete' | translate}}</option>
+      </select> <br>
+      <button (click)="addTask(title.value,description.value, pending.value )">{{ 'create.addTask' | translate}}</button>
+      <app-read></app-read>
+ 
+
+  
+ 
+
 </div>

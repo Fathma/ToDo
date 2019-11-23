@@ -39,7 +39,7 @@
     margin: -8px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #19c6d2;
     color: white;
     font-weight: 600;
   }
@@ -280,7 +280,7 @@
     .card.highlight-card span {
       margin-left: 72px;
     }
-
+    
     svg#rocket-smoke {
       right: 120px;
       transform: rotate(-5deg);
@@ -297,14 +297,61 @@
 
 <!-- Toolbar -->
 
+<div class="toolbar" role="banner">
+    <img
+      width="40"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+    <span>TODO</span>
+      <div class="spacer"></div>
+      <ul style="list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #19c6d2;">
+          <li style="float: left;"> 
+              <a routerLink="/registration" style="display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;" >{{'home.registration' | translate }}</a>
+          </li>
+          
 
-<div class="content" role="main">
-  <a routerLink="/registration" >registration</a> <a routerLink="/tasks">tasks</a> <a routerLink="/login">login</a>  <a (click)="logout()">logout</a>
-  <h3 >{{'home.greeting' | translate}}</h3>
-  <select #langselect (change)='translate.use(langselect.value)'>
-    <option *ngFor="let lang of translate.getLangs()" [value]='lang'>{{ lang }}</option>
-    
-  </select>
-</div>
+        <li style="float: left;">
+            <a routerLink="/login" style="display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;">{{'home.login' | translate }}</a> 
+        </li>
+        <li style="float: left;">
+            <a routerLink="/tasks" style="display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;">{{'home.tasks' | translate }}</a> 
+
+        </li>
+       
+        <li style="float: left;">
+            <a (click)="logout()" style="display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;">{{'home.logout' | translate }}</a>
+
+        </li>
+        <li style="float: left; padding: 13px;">
+            <select #langselect (change)='translate.use(langselect.value)' >
+                <option *ngFor="let lang of translate.getLangs()" [value]='lang'>{{ lang }}</option>
+              </select>
+        </li>
+      </ul>
+  </div>
+
+
+
 
 <router-outlet></router-outlet>

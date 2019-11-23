@@ -1,0 +1,23 @@
+{
+    "home":{
+    "registration": "নিবন্ধন",
+    "tasks": "কাজ",
+    "login": "লগইন",
+    "logout": "প্রস্থান"
+    },
+    "reg":{
+        "Email":"ইমেইল",
+        "Password":"পাসওয়ার্ড",
+        "Submit":"জমা দিন"
+    },
+    "create":{
+        "title":"খেতাব",
+        "description": "বিবরণ",
+        "setectOne": "একটা নির্বাচন করুন",
+        "addTask": "একটি টাস্ক যুক্ত করুন",
+        "pending":"মুলতুবী",
+        "onGoing": "চলছে",
+        "complete": "সম্পূর্ণ"
+        
+    }
+}

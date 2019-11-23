@@ -15,7 +15,7 @@ export class LoginComponent  {
     data.map(e=>{
       if(e.email == data1.email && e.pwd == data1.pwd){
         localStorage.setItem('_id', e._id);
-        console.log(e)
+        alert("login Successful!");
       }
     })
     

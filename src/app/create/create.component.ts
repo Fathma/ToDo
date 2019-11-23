@@ -17,6 +17,7 @@ export class CreateComponent implements OnInit {
   constructor(private store: Store<AppState>) {
     this.error = this.sdf()
   }
+  
   sdf(){
     let userId = localStorage.getItem('_id')
     let user =data.filter(e=>(userId == e._id))

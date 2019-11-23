@@ -1,6 +1,9 @@
-<form #login = "ngForm" (ngSubmit) = "check(login.value)" > 
-        <input type = "text" name = "email" placeholder = "email" ngModel> <br/>
-       <input type = "password" name = "pwd" placeholder = "password" ngModel> <br/> 
-       <input type = "submit" value = "login"> 
-    </form>
-    
+
+<div class="content" role="main" style="padding-top: 50px; padding-left: 600px;">
+        <p>First register, then login, then add task</p>
+        <form #login = "ngForm" (ngSubmit) = "check(login.value)" > 
+                <input type = "text" name = "email" placeholder = "{{'reg.Email' | translate}}" ngModel> <br/>
+                <input type = "password" name = "pwd" placeholder = "{{'reg.Password' | translate}}" ngModel> <br/> 
+                <input type = "submit" value = "{{'home.login' | translate }}"> 
+        </form>
+</div>

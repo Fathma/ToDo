@@ -28,7 +28,7 @@ export class RegistrationComponent implements OnInit {
     data1._id = this.generateUUID()
     data1.tasks = []
     data.push(data1)
-    console.log(data)
+    alert("Registration Successful!");
    
   }
 
